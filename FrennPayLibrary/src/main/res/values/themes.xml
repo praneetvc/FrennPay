@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.FrennPay.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.FrennPay.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.FrennPay.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
