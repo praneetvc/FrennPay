@@ -5,7 +5,14 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
     <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="proceed">Proceed</string>
+    <string name="frenn_registered_mobile_number">Frenn Registered Mobile Number</string>
+    <string name="payment_is_secured_by_frenn">Payment is secured by Frenn.</string>
+    <string name="type_here">Type here</string>
+    <string name="enter_bvn_number">Enter BVN Number</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_date_of_birth">Enter Date of Birth</string>
+    <string name="sub_total">Sub Total:</string>
+    <string name="n15_000">N15,000</string>
 </resources>
