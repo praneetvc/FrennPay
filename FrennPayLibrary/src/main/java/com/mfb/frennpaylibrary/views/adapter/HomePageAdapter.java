@@ -1,11 +1,11 @@
-package com.mfb.frennpaylibrary.adapter;
+package com.mfb.frennpaylibrary.views.adapter;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.mfb.frennpaylibrary.ExistingUserFragment;
-import com.mfb.frennpaylibrary.NewUserFragment;
+import com.mfb.frennpaylibrary.views.ExistingUserFragment;
+import com.mfb.frennpaylibrary.views.NewUserFragment;
 
 public class HomePageAdapter extends FragmentPagerAdapter {
     int totalTabs;

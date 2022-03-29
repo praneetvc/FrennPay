@@ -4,7 +4,7 @@
 
     <application>
         <activity
-            android:name=".HomeActivity"
+            android:name=".views.HomeActivity"
             android:exported="true"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.FrennPay.NoActionBar" />

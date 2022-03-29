@@ -1,4 +1,4 @@
-package com.mfb.frennpaylibrary;
+package com.mfb.frennpaylibrary.views;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,11 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.mfb.frennpaylibrary.databinding.FragmentNewUserBinding;
+import com.mfb.frennpaylibrary.R;
+import com.mfb.frennpaylibrary.databinding.FragmentExistingUserBinding;
 
-public class NewUserFragment extends Fragment {
+public class ExistingUserFragment extends Fragment {
 
-    private FragmentNewUserBinding binding;
+    private FragmentExistingUserBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +22,7 @@ public class NewUserFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentNewUserBinding.inflate(inflater, container, false);
+        binding = FragmentExistingUserBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -29,8 +30,8 @@ public class NewUserFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.proceedButton.setOnClickListener(view1 -> NavHostFragment.findNavController(NewUserFragment.this)
-                .navigate(R.id.action_SecondFragment_to_FirstFragment));
+        binding.buttonProceed.setOnClickListener(view1 -> NavHostFragment.findNavController(ExistingUserFragment.this)
+                .navigate(R.id.action_FirstFragment_to_SecondFragment));
     }
 
     @Override

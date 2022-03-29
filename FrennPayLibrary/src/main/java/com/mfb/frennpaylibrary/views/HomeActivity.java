@@ -1,4 +1,4 @@
-package com.mfb.frennpaylibrary;
+package com.mfb.frennpaylibrary.views;
 
 import android.os.Bundle;
 
@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.ui.AppBarConfiguration;
 
+import com.mfb.frennpaylibrary.R;
 import com.mfb.frennpaylibrary.databinding.ActivityHomeBinding;
 
 public class HomeActivity extends AppCompatActivity {

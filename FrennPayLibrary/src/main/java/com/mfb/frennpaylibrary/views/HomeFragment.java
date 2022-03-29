@@ -1,4 +1,4 @@
-package com.mfb.frennpaylibrary;
+package com.mfb.frennpaylibrary.views;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.tabs.TabLayout;
-import com.mfb.frennpaylibrary.adapter.HomePageAdapter;
+import com.mfb.frennpaylibrary.views.adapter.HomePageAdapter;
 import com.mfb.frennpaylibrary.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
