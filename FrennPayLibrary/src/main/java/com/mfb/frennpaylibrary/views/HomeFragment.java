@@ -28,8 +28,6 @@ public class HomeFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Existing Frenn User"));
-        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("New User"));
 
         final HomePageAdapter adapter = new HomePageAdapter(getChildFragmentManager(), binding.tabLayout.getTabCount());
         binding.viewPager.setAdapter(adapter);

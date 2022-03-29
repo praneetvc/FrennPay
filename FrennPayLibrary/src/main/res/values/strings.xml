@@ -15,4 +15,6 @@
     <string name="enter_date_of_birth">Enter Date of Birth</string>
     <string name="sub_total">Sub Total:</string>
     <string name="n15_000">N15,000</string>
+    <string name="existing_frenn_user">Existing Frenn User</string>
+    <string name="new_user">New User</string>
 </resources>
