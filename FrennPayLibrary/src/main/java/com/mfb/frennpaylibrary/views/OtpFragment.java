@@ -1,18 +1,20 @@
 package com.mfb.frennpaylibrary.views;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
-import com.mfb.frennpaylibrary.databinding.FragmentNewUserBinding;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import com.mfb.frennpaylibrary.R;
+import com.mfb.frennpaylibrary.databinding.FragmentOtpBinding;
 
-public class NewUserFragment extends Fragment {
+public class OtpFragment extends Fragment {
 
-    private FragmentNewUserBinding binding;
+    private FragmentOtpBinding binding;
 
     @Override
     public View onCreateView(
@@ -20,19 +22,13 @@ public class NewUserFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentNewUserBinding.inflate(inflater, container, false);
+        binding = FragmentOtpBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        binding.buttonProceed.setOnClickListener(view1 -> {
-            if (getActivity() != null) {
-                ((HomeActivity) getActivity()).loadFragment(new OtpFragment());
-            }
-        });
     }
 
     @Override
@@ -40,5 +36,4 @@ public class NewUserFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }

@@ -17,4 +17,6 @@
     <string name="n15_000">N15,000</string>
     <string name="existing_frenn_user">Existing Frenn User</string>
     <string name="new_user">New User</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -24,7 +24,7 @@
 
 
     <Button
-        android:id="@+id/proceed_button"
+        android:id="@+id/button_proceed"
         android:layout_width="0dp"
         android:layout_height="@dimen/_60sdp"
         android:layout_marginStart="@dimen/_16sdp"

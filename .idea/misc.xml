@@ -3,16 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1359375" />
         <entry key="FrennPayLibrary/src/main/res/drawable/ic_bvn.xml" value="0.1205" />
         <entry key="FrennPayLibrary/src/main/res/drawable/ic_dashicons_lock.xml" value="0.1205" />
+        <entry key="FrennPayLibrary/src/main/res/drawable/otp_box_background.xml" value="0.2085" />
         <entry key="FrennPayLibrary/src/main/res/drawable/selector_backgroud_green.xml" value="0.2085" />
+        <entry key="FrennPayLibrary/src/main/res/drawable/selector_background_green.xml" value="0.2085" />
         <entry key="FrennPayLibrary/src/main/res/drawable/selector_tab.xml" value="0.2085" />
         <entry key="FrennPayLibrary/src/main/res/drawable/selector_tab_text.xml" value="0.1205" />
         <entry key="FrennPayLibrary/src/main/res/layout/activity_home.xml" value="0.178125" />
         <entry key="FrennPayLibrary/src/main/res/layout/custom_tab.xml" value="0.19610507246376813" />
         <entry key="FrennPayLibrary/src/main/res/layout/custom_tab_new.xml" value="0.19610507246376813" />
+        <entry key="FrennPayLibrary/src/main/res/layout/fragment_existing_user.xml" value="0.109375" />
         <entry key="FrennPayLibrary/src/main/res/layout/fragment_home.xml" value="0.5" />
         <entry key="FrennPayLibrary/src/main/res/layout/fragment_new_user.xml" value="0.109375" />
+        <entry key="FrennPayLibrary/src/main/res/layout/fragment_otp.xml" value="0.109375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.178125" />
       </map>
     </option>

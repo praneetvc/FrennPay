@@ -30,8 +30,11 @@ public class ExistingUserFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonProceed.setOnClickListener(view1 -> NavHostFragment.findNavController(ExistingUserFragment.this)
-                .navigate(R.id.action_FirstFragment_to_SecondFragment));
+        binding.buttonProceed.setOnClickListener(view1 -> {
+            if (getActivity() != null) {
+                ((HomeActivity) getActivity()).loadFragment(new OtpFragment());
+            }
+        });
     }
 
     @Override
