@@ -19,4 +19,11 @@
     <string name="new_user">New User</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_wait_checking_your_credit_limit">Please wait..checking your credit limit</string>
+    <string name="enter_otp_sent_to_0879877xxxx">Enter OTP Sent To 0879877xxxx</string>
+    <string name="scheduled_payment_details">Scheduled payment details</string>
+    <string name="frenn_pay_in_30_days">Frenn Pay in 30 Days</string>
+    <string name="you_need_to_pay_the_due_amount_after_30_days">You need to pay the due amount after 30 days.</string>
+    <string name="next_re_payment_date">Next re-payment date:</string>
+    <string name="_02_03_2022">02-03-2022</string>
 </resources>

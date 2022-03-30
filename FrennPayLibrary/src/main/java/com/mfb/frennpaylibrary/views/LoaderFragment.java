@@ -8,11 +8,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.mfb.frennpaylibrary.databinding.FragmentOtpBinding;
+import com.mfb.frennpaylibrary.databinding.FragmentLoaderBinding;
 
-public class OtpFragment extends Fragment {
+public class LoaderFragment extends Fragment {
 
-    private FragmentOtpBinding binding;
+    private FragmentLoaderBinding binding;
 
     @Override
     public View onCreateView(
@@ -20,18 +20,13 @@ public class OtpFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentOtpBinding.inflate(inflater, container, false);
+        binding = FragmentLoaderBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        binding.buttonProceed.setOnClickListener(view1 -> {
-            if (getActivity() != null) {
-                ((HomeActivity) getActivity()).loadFragment(new LoaderFragment());
-            }
-        });
     }
 
     @Override

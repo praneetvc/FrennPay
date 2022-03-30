@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".views.OtpFragment">
 
+    <TextView
+        android:id="@+id/sendOtpMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_otp_sent_to_0879877xxxx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.mfb.frennpaylibrary.views.OtpEditText
         android:layout_width="match_parent"
         android:layout_height="@dimen/_80sdp"
@@ -15,7 +23,7 @@
         android:textSize="@dimen/_16sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/sendOtpMessage" />
 
     <Button
         android:id="@+id/button_proceed"
