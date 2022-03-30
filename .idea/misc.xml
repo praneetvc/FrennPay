@@ -13,6 +13,7 @@
         <entry key="FrennPayLibrary/src/main/res/drawable/selector_tab_text.xml" value="0.1205" />
         <entry key="FrennPayLibrary/src/main/res/layout/activity_home.xml" value="0.178125" />
         <entry key="FrennPayLibrary/src/main/res/layout/custom_tab.xml" value="0.19610507246376813" />
+        <entry key="FrennPayLibrary/src/main/res/layout/custom_tab_existing.xml" value="0.109375" />
         <entry key="FrennPayLibrary/src/main/res/layout/custom_tab_new.xml" value="0.19610507246376813" />
         <entry key="FrennPayLibrary/src/main/res/layout/fragment_existing_user.xml" value="0.109375" />
         <entry key="FrennPayLibrary/src/main/res/layout/fragment_home.xml" value="0.5" />

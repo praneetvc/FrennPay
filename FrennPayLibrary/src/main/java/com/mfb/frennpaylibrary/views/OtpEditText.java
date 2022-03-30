@@ -2,11 +2,13 @@ package com.mfb.frennpaylibrary.views;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.text.Editable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.ActionMode;
-import android.view.View;
+
 import androidx.appcompat.widget.AppCompatEditText;
 
 import com.mfb.frennpaylibrary.R;
@@ -39,7 +41,6 @@ public class OtpEditText extends AppCompatEditText {
         mLineStroke = multi * mLineStroke;
         mLinesPaint = new Paint(getPaint());
         mLinesPaint.setStrokeWidth(mLineStroke);
-        mLinesPaint.setColor(getResources().getColor(R.color.white));
         mLinesPaint.setColor(getResources().getColor(R.color.white));
         setBackgroundResource(0);
         mSpace = multi * mSpace; //convert to pixels for our density
@@ -82,12 +83,21 @@ public class OtpEditText extends AppCompatEditText {
         int textLength = text.length();
         float[] textWidths = new float[textLength];
         getPaint().getTextWidths(getText(), 0, textLength, textWidths);
-
+        mLinesPaint.setStyle(Paint.Style.FILL);
+        mLinesPaint.setColor(Color.WHITE);
         for (int i = 0; i < mNumChars; i++) {
-            canvas.drawLine(startX, bottom, startX + mCharSize, bottom, mLinesPaint);
+            float left = startX;
+            float top = getPaddingTop();
+            float right = startX + mCharSize;
+            float btm = getHeight() - getPaddingBottom();
+
+            canvas.drawRect(left, top, right, btm, mLinesPaint);
+//            canvas.drawLine(startX, bottom, startX + mCharSize, bottom, mLinesPaint);
             if (getText().length() > i) {
                 float middle = startX + mCharSize / 2;
-                canvas.drawText(text, i, i + 1, middle - textWidths[0] / 2, bottom - mLineSpacing, getPaint());
+                float y = getPaddingTop() + btm / 2;
+                Log.d("Paint", "y: " + y);
+                canvas.drawText(text, i, i + 1, middle - textWidths[0] / 2, y, getPaint());
             }
             if (mSpace < 0) {
                 startX += mCharSize * 2;
